@@ -1,0 +1,1 @@
+import{j as s}from"./react-vendor-D1dWYPHv.js";import{e as a,f as e}from"./index-CUUdvKla.js";const i=e("mx-auto",{variants:{size:{sm:"w-16 h-px",md:"w-24 h-0.5",lg:"w-32 h-0.5"}},defaultVariants:{size:"md"}}),o=({size:e,className:o})=>s.jsx("div",{className:a(i({size:e}),"gold-bg rounded-full opacity-60",o)});export{o as G};

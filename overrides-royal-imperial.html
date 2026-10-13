@@ -1,0 +1,44 @@
+<!-- UI overrides for the Royal Imperial demo preview (port 3001).
+     Hides demo chrome: watermark overlay (dove + "Invite Us" text), the
+     bottom-right buy CTA pill, and the feedback popup. -->
+<style id="royal-imperial-overrides">
+  /* Tiled dove watermark with faint "Invite Us" text */
+  [data-demo-watermark],
+  .demo-watermark-overlay {
+    display: none !important;
+  }
+
+  /* Bottom-right "create yours" CTA pill (demo-only, links to /checkout) */
+  [class^="fixed bottom-4 right-4 z-50"],
+  [class*=" fixed bottom-4 right-4 z-50"] {
+    display: none !important;
+  }
+
+  /* "How was your experience?" feedback popup */
+  [aria-label="Share your feedback"] {
+    display: none !important;
+  }
+
+  /* Complete removal of invitation loader */
+  .invitation-loader,
+  [aria-label="Preparing your invitation"],
+  [role="status"][data-invitation-page],
+  [data-invitation-page] .invitation-loader {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+
+  /* Bottom-left language switcher button */
+  button.fixed.bottom-4.left-4,
+  [class*="bottom-4 left-4"],
+  .fixed.bottom-4.left-4 {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+</style>
